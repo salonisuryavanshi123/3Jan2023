@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>JS Loop Statement For Loop</title>
+        <script>
+            //I can write the JS code before the closing of head tag
+        </script>
+    </head>
+    <body>
+        <ul class="myul">
+
+        </ul>
+
+
+        <script>
+            var myul = document.querySelector('ul.myul');
+            console.log(myul);
+            //I can write the JS code before the closing of body tag
+            //Name
+            //How many times we want to greet
+
+
+            var name = prompt("Please enter your name?") //It is received as string
+            alert(name); //name is a actual argument
+
+            var noTimes = prompt("How many times do you want to greet?");
+            noTimes = parseInt(noTimes);  //Type Casting
+            //String -> Number
+            // "10" -> 10
+            console.log(typeof noTimes);
+
+            /*
+            Syntax
+            for(expression 1;expression 2;expression 3){
+                // code block to be executed
+            }
+            for(initialization; Condition Checking; Increment/Decrement){
+                //code block to be executed
+            }
+            */
+
+            for(let i=1;i<noTimes;i++){
+                //console.log(`Hello ${name}, How are you!`);
+                myul.innrtHtml += `<li>Hello ${name}, How are you!<li>`;
+            }
+
+        </script>
+    </body>
+</html>

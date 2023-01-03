@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>JS Loop Statement using For Loop</title>
+    </head>
+    <body>
+        <form>
+            <input class="name" type="text" placeholder="Please enter your name">
+            <input class="noTimes" type="number" placeholder="How many times to greet?">
+            <input type="button" value="submit" onclick="this">
+        </form>
+        <ul class="myul"></ul>
+
+        <script>
+            //Far arrow notation
+            let myul = document.querySelector('ul.myul');
+
+            let n = document.querySelector('input.name');
+            let noTimes = document.querySelector('input.noTimes');
+
+            function x(){
+                alert('OK');
+                let noTimes = parseInt(noTimes.value)
+                console.log(n.value);
+                console.log(noTimes.value);
+
+                for(let i=1;i<noTimes;i++){
+                    myul.innerHTML += `<li>Hello ${n.value}, How are you<li>`;
+                }
+            }
+        </script>
+    </body>
+</html>
